@@ -1,0 +1,51 @@
+﻿body {
+}
+h1{
+
+   display:block;
+   position:static;
+   top:auto;
+   left:auto;
+   right:auto;
+   bottom:auto;
+  color:#272B30;
+  text-align:center;
+  line-height:86px;
+  
+  
+}
+.jumbotron {
+    display: block;
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    background: -webkit-linear-gradient(left, #6f2600, #dc3545) !important;
+}
+p {
+    text-align: center;
+    font-size: 30px;
+    background: center;
+  /*  background-color: lightgrey;*/
+  
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+   /* background-color: gainsboro;*/
+    font-family: Arial;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+  /*  background-color: gainsboro;*/
+    font-family: Arial;
+}
+h3 {
+    font-size: 35px;
+    text-align: center;
+    background-color: antiquewhite;
+    background-size: cover;
+    font-family: Arial;
+}

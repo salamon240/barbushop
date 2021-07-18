@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Entery.master.cs" Inherits="barbushop.Entery" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+           <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link href="css/navbar.css" rel="stylesheet" />
+    <link href="css/mangernav.css" rel="stylesheet" />
+    <style>
+        header{height:50vh;} 
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header >
+                 <nav>
+                      <img class="logo" src="image/mainPage/wideLogo (1).png" >
+                <div class="menu">
+                    <ul>
+                        <li><a href="#"></a></li>
+                  
+                    </ul>
+                </div>
+            </nav>
+                <h1>barber-shop</h1>
+            </header>
+           
+<br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         
+        <script src="js/jquery-3.4.1.min.js"></script>
+            <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+            <script type="text/javascript">
+                $(window).on("scroll", function () {
+                    if ($(window).scrollTop()) {
+                        $('nav').addClass('black');
+                    }
+                    else { $('nav').removeClass('black'); }
+                })
+
+            </script>
+        <footer>
+            <h3></h3>
+        </footer>
+        <footer class="page-footer font-small blue">
+          <div class="footer-copyright text-center py-3">BarBushop Ⓒ</div>
+        </footer>
+        </div>
+    </form>
+</body>
+</html>

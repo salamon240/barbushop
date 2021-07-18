@@ -1,0 +1,1 @@
+﻿select * from Users u join Meetings m on u.UserID=m.UserID where m.MeetingID=108

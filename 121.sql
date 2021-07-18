@@ -1,0 +1,1 @@
+﻿select b.phonNumber,b.Address,b.name,MeetingDate,m.HairCut,t.Time from Users u join Meetings m on u.UserID=m.UserID join Barbushops b on m.MUserID=b.UserID join Times t on t.MeetingTime=m.MeetingTime where u.UserID=9

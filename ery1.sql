@@ -1,0 +1,1 @@
+﻿select *,convert(varchar(10), OrderDate, 103)as date from Orderss o join Users u on o.UserID = u.UserID join Citys c on c.cityID = u.Citye join OrderStatuss os on o.StatusId = os.StatusID where o.BarbushopID = 1048 and u.Email='idan12@gmail.com'

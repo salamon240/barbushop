@@ -1,0 +1,1 @@
+﻿select*,convert(varchar(10), m.MeetingDate, 103)as date from Meetings m join Users u on m.UserID=u.UserID join Times t on m.MeetingTime=t.MeetingTime join MeetingsStatus ms on m.Status=ms.MstatusID where m.MUserID  =1112

@@ -1,0 +1,40 @@
+﻿body {
+    
+}
+.next{
+    text-align:center;
+}
+.image-person-container {
+    background-image: url("/image/backg/products.jpg");
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    padding-left:inherit;
+}
+
+
+
+div.border
+{
+    background-color:lavender;
+
+}
+#customers {
+  
+   
+    align-self:center;
+    align-content:center;
+    vertical-align:central;
+    ruby-align:center;
+    display:inline-block;
+}
+div.container{
+    text-align:center;
+
+}
+#BtnNext{
+    border-bottom-left-radius:initial;
+}

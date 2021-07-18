@@ -1,0 +1,19 @@
+﻿body {
+    background-color: #f3e7d9;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: initial;
+    font-size: 120px;
+   
+}
+
+.register-lef {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 100%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+}

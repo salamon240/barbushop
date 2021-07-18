@@ -1,0 +1,24 @@
+﻿/*body {
+    margin-top: 20px;
+}
+
+*/
+.backeToPro
+{ 
+    align-items:center;
+    text-align:center;
+    font-size:30px;
+    padding-bottom:inherit;
+    position:center;
+    direction:rtl;
+}
+a{
+    position:center;
+}
+
+body {
+    background: #eecda3;
+    background: -webkit-linear-gradient(to right, #eecda3, #ef629f);
+    background: linear-gradient(to right, #eecda3, #ef629f);
+    min-height: 100vh;
+}

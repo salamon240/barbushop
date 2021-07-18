@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="template.master.cs" Inherits="barbushop.template" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link href="css/footer.css" rel="stylesheet" />
+
+    <link href="css/masteManger.css" rel="stylesheet" />
+    <link href="css/mangernav.css" rel="stylesheet" />
+    <!--footer-->
+     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <style>
+        h5{
+    color:aliceblue;
+    font-size:20px;
+}
+        header {
+    background:#000000;
+    background-size: cover;
+    background-position: center;
+    background-position: bottom;
+    height: 20vh;
+}
+        nav.black {
+    background: #000;
+    z-index: 3;
+}
+ @media (min-width: 768px)
+.text-md-left {
+    text-align: right!important;
+}
+
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+        <script src="js/kit.fontawesome.js"></script>
+    <!---footer--->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+   <header >
+                 <nav style="z-index:3;">
+                       <input type="checkbox" id ="check" />
+                     <label for="check" class="checkbtn">
+                         <i class="fas fa-bars"></i>
+                     </label>
+                      <img class="logo" src="image/mainPage/wideLogo (1).png" />
+                                    
+                
+               <ul >
+                        <li ><a class="active" href="default.aspx" dir="rtl" style="text-decoration-line:none;">דף ראשי</a></li>
+                   
+                        <li ><a href="MainBar.aspx" style="text-decoration-line:none;">אודות</a></li>
+                       <li><button type="button"   class="btn btn-primary btn-lg btn-block mb-3" data-toggle="modal" data-target="#modalBarber">התחברות</button></li>
+
+                       
+                    </ul>
+                 
+               </nav>
+            </header>
+        
+   <%--     </div>--%>
+
+    
+  
+        
+       
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+            <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+            <script type="text/javascript">
+                $(window).on("scroll", function () {
+                    if ($(window).scrollTop()) {
+                        $('nav').addClass('black');
+                    }
+                    else { $('nav').removeClass('black'); }
+                })
+
+            </script>
+        <section id="footer">
+                    <br />
+                    <br />
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-right text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4" style="text-align:center;">
+					<h5>תנאים:</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="form.aspx"><i class="fa fa-angle-double-right"></i>דף הבית</a></li>
+						<li><a href="MainBar.aspx"><i class="fa fa-angle-double-right"></i>קצת עלינו</a></li>
+						<li><a href="termsOfUse.aspx"><i class="fa fa-angle-double-right"></i>תנאי שימוש</a></li>
+						<%--<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>--%>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+               
+				 <img class="logo" src="image/mainPage/wideLogo (1).png" >
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" style="text-align:center;">
+					<h5>צור קשר</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="mailto:salamont48@gmail.com"><i class="fa fa-angle-double-right"></i>salamont48@gmail.com</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>0545607333</a></li>
+			<%--			<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>--%>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+
+                     
+					<%--<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="mailto:bootsnipp@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>--%>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+<%--					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u></p>--%>
+					<p class="h6">ⒸAll right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Barbershop</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+        <%--<footer>
+            <h3></h3>
+        </footer>
+        <footer class="page-footer font-small blue">
+          <div class="footer-copyright text-center py-3">BarBushop Ⓒ</div>
+        </footer>--%>
+
+    </div>
+    </form>
+</body>
+</html>
